@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="16dp"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/image_producto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@+id/image_producto"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:textColor="@color/primary_text"
+
+                android:text="Sony" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:id="@+id/price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:textColor="@color/secondary_text"
+                android:text="$1,300" />
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:id="@+id/quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:text="quantity 50" />
+        </LinearLayout>
+
+            <ImageButton
+                android:id ="@+id/add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/add"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                />
+
+            <!--android.support.design.widget.FloatingActionButton
+                android:id="@+id/add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add"
+                android:elevation="3dp"
+                >
+            </android.support.design.widget.FloatingActionButton-->
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

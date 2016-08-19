@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ListProducts">
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/sincronizar"
+        android:orderInCategory="1"
+        android:title="refresh"
+        app:showAsAction="ifRoom" />
+
+</menu>
